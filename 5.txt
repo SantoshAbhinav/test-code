@@ -1,0 +1,20 @@
+There are two approaches in order to crawl the website to get the data:
+
+1. Direct Approach
+This is the direct approach by accessing the website through any browser and then retrieving the available data visible on the website. 
+And another approach is by inspecting the page, and then getting the all text corresponding to HTM tags by manual search. 
+But these processes are not automated and very tedious process.
+
+2. Using HTML text of the website/webpage with Beautiful Soup:
+This is the highly automated process using a tool called Beautiful soup in python language.
+Steps to extract data in automated process:
+-> First accessing the HTML code of the website or target webpage using modules like urllib, request in python.
+-> Then after the request get response data by the website which is generally HTML code
+-> Then using beatiful soup we can retrieve different types of data using different tags.
+         -> If we want all urls or image urls we can get that data using 'a' tag
+         -> If we want text data we can get using 'p' tag
+         -> Similarly other required data formats
+         -> we can also use class names to filter data
+-> Data can also be hierarchical, for eaxmple within div tag, there can another div
+-> we can accesss the heirarchically by traversing through inner tags using json hierarchical data access formats
+-> This is very automated such that all data corresponding to a tag and class name can be retieved at once
